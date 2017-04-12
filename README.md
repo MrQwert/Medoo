@@ -1,4 +1,4 @@
-##Bug-fix version of the original Medoo repository.
+## Bug-fix version of the original Medoo repository.
 
 Fixes the **id()** method for **pgsql** DB type allowing it to return correct last inserted id.
 
