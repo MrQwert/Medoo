@@ -1,3 +1,7 @@
+##Bug-fix version of the original Medoo repository.
+
+Fixes the **id()** method for **pgsql** DB type allowing it to return correct last inserted id.
+
 ![](https://cloud.githubusercontent.com/assets/1467904/19835326/ca62bc36-9ebd-11e6-8b37-7240d76319cd.png)
 
 ## [Medoo](http://medoo.in)
@@ -30,9 +34,18 @@ PHP 5.4+ and PDO extension installed
 
 ### Install via composer
 
-Add Medoo to composer.json configuration file.
+Add this lines to your composer.json configuration file.
+
 ```
-$ composer require catfan/Medoo
+    "require": {
+        "catfan/medoo": "dev-bugfix"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/MrQwert/Medoo.git"
+        }
+    ],
 ```
 
 And update the composer
